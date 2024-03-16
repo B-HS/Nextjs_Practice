@@ -4,14 +4,14 @@ import './globals.css'
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
-        <html lang='ko'>
-            <Providers>
+        <Providers>
+            <html lang='ko'>
                 <body className='container max-w-screen-lg'>
                     <Header />
                     {children}
                 </body>
-            </Providers>
-        </html>
+            </html>
+        </Providers>
     )
 }
 
